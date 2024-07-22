@@ -15,7 +15,7 @@ public class PermissionEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "name")
+    @Column(name = "name", unique = true)
     @Enumerated(EnumType.STRING)
     private PermissionEnum permission;
 }

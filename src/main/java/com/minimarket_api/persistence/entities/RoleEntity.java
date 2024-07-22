@@ -19,7 +19,7 @@ public class RoleEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "name")
+    @Column(name = "name", unique = true)
     @Enumerated(EnumType.STRING)
     private RoleEnum role;
 

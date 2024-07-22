@@ -1,7 +1,7 @@
 package com.minimarket_api.persistence.entities;
 
+import com.minimarket_api.persistence.enums.DeliveryTypeEnum;
 import jakarta.persistence.*;
-import jakarta.validation.constraints.NotBlank;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -15,7 +15,7 @@ public class DeliveryTypeEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotBlank
-    @Column(length = 40)
-    private String name;
+    @Column(length = 40, unique = true)
+    @Enumerated(EnumType.STRING)
+    private DeliveryTypeEnum deliveryType;
 }
