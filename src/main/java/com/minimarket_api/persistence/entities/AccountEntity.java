@@ -20,8 +20,8 @@ public class AccountEntity {
     private Long id;
 
     @NotBlank
-    @Column(length = 8, unique = true)
-    private String dni;
+    @Column(length = 20, unique = true)
+    private String username;
 
     @NotBlank
     @Column(length = 50)

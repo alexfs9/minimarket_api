@@ -15,7 +15,7 @@ public class DeliveryTypeEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(length = 40, unique = true)
+    @Column(name = "name", unique = true)
     @Enumerated(EnumType.STRING)
     private DeliveryTypeEnum deliveryType;
 }

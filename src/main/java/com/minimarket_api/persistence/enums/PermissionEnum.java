@@ -3,8 +3,23 @@ package com.minimarket_api.persistence.enums;
 
 public enum PermissionEnum {
 
-    READ,
-    WRITE,
-    UPDATE,
-    DELETE
+    CREATE_PRODUCTS,
+    UPDATE_PRODUCTS,
+    DELETE_PRODUCTS,
+    CREATE_CATEGORY,
+    READ_CATEGORY,
+    CREATE_SUBCATEGORY,
+    READ_SUBCATEGORY,
+    CREATE_SUPPLIER,
+    READ_SUPPLIER,
+    UPDATE_SUPPLIER,
+    READ_SALES,
+    READ_ACCOUNT_PURCHASES,
+
+    READ_PRODUCTS,
+
+    CREATE_SALES,
+    READ_MY_PURCHASES,
+    READ_MY_ACCOUNT,
+    UPDATE_MY_ACCOUNT,
 }
